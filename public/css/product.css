@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  font-family: SteepTypewriterMedium;
+  src: url("../font/SteepTypewriterMedium.ttf");
+}
+@font-face {
+  font-family: "GulyesaScript";
+  src: url("../font/HLT GulyesaScript.ttf");
+}
+@font-face {
+  font-family: "Arial_Italic";
+  src: url("../font/arial/ArialCE.ttf");
+}
+.slick-slider :focus {
+  outline: 0;
+}
+.slick-slider .slick-dots {
+  bottom: 20px;
+}
+.slick-slider .slick-dots li {
+  margin: 0;
+}
+.slick-slider .slick-dots li.slick-active button::before {
+  color: #3fb871;
+}
+.slick-slider .slick-dots li button:before {
+  opacity: 1;
+  font-size: 10px;
+  color: #e1e1e1;
+}
+
+.slide {
+  position: relative;
+}
+.slide .caption {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.slide .caption h1 {
+  color: #ffffff;
+  font-size: 66.38px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.slide .caption h2 {
+  font-family: "GulyesaScript";
+  color: #ffffff;
+  font-size: 103.92px;
+}
+.slide .caption p {
+  color: #ffffff;
+  font-family: "Arial_Italic";
+  font-style: italic;
+  font-size: 18px;
+}
+
+.checked {
+  color: #febf01;
+}
+
+.product {
+  border: 1px solid #e1e1e1;
+}
+.product .product-overlay {
+  position: relative;
+}
+.product .product-overlay .image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.product .product-overlay .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.product .product-overlay .text {
+  color: #e1e1e1;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.product .product-overlay .text ul.btn-overlay li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 5px;
+}
+.product .product-overlay .text ul.btn-overlay li a {
+  padding: 5px 10px;
+  font-size: 13px;
+  font-family: "Arial";
+  cursor: pointer;
+}
+.product .product-overlay .text ul.btn-overlay li a.add-cart {
+  background-color: #3fb871;
+  color: #e1e1e1;
+  border-radius: 20px;
+}
+.product .product-overlay .text ul.btn-overlay li a.add-cart:hover {
+  background-color: #e1e1e1;
+  color: #3fb871;
+  transition: all, 0.5s;
+}
+.product .product-overlay .text ul.btn-overlay li a.search {
+  background-color: #e1e1e1;
+  color: #000;
+  border-radius: 50%;
+}
+.product .product-overlay .text ul.btn-overlay li a.search:hover {
+  background-color: #3fb871;
+  color: #e1e1e1;
+  transition: all, 0.5s;
+}
+.product:hover .product-overlay .overlay {
+  opacity: 1;
+}
+.product .product-content {
+  text-align: center;
+  padding: 20px 0;
+}
+.product .product-content .title {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Arial";
+}
+.product .product-content .title a {
+  color: #555555;
+}
+.product .product-content .price {
+  color: red;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+}
+.product .product-content .price .price-sale {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #959595;
+  padding-left: 5px;
+}
+
+.product__feature h5.title, .product__item h5.title, .product__new h5.title, .new h5.title {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
+  color: #3fb871;
+}
+.product__feature h5.title a, .product__item h5.title a, .product__new h5.title a, .new h5.title a {
+  border-bottom: 4px solid #3fb871;
+  padding-bottom: 8px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16.24px;
+}
+
+.product__item {
+  position: relative;
+}
+.product__item ul li.fa.fa-star {
+  padding: 0;
+  border: none;
+}
+.product__item .images img {
+  width: 100px;
+  height: 80px;
+}
+.product__item .product-content_side {
+  padding: 0 10px;
+}
+.product__item .product-content_side .title {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Arial";
+}
+.product__item .product-content_side .title a {
+  color: #555555;
+}
+.product__item .product-content_side .price {
+  color: red;
+  font-weight: 600;
+  font-family: "Roboto Slab", serif;
+}
+.product__item .product-content_side .price .price-sale {
+  text-decoration: line-through;
+  color: #959595;
+  padding-left: 5px;
+}
+.product__item ul.product-item-list {
+  margin: 30px 0;
+}
+.product__item ul.product-item-list li {
+  list-style: none;
+  padding: 17px;
+  border: 1px solid #e1e1e1;
+}
+.product__item .btn_slide_edit {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+.product__item .btn_slide_edit .button {
+  border-radius: 50%;
+  margin: 2px;
+  border: 1px solid #000;
+  background-color: #fff !important;
+}
+.product__item .btn_slide_edit .button:focus {
+  outline: 0;
+}
+.product__item .btn_slide_edit i {
+  font-size: 10px;
+  padding: 0px 9px 7px 8px;
+  color: #000;
+}
+
+.product__new {
+  margin: 20px 0;
+  position: relative;
+}
+.product__new .btn_slide_edit {
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+.product__new .btn_slide_edit .button {
+  border-radius: 50%;
+  margin: 2px;
+  border: 1px solid #000;
+  background-color: #fff !important;
+}
+.product__new .btn_slide_edit .button:focus {
+  outline: 0;
+}
+.product__new .btn_slide_edit i {
+  font-size: 10px;
+  padding: 0px 9px 7px 8px;
+  color: #000;
+}
+
+.new {
+  padding: 30px 0;
+}
+.new ul.new__section li {
+  list-style: none;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.new ul.new__section li img {
+  width: 100%;
+}
+.new ul.new__section li span {
+  font-style: italic;
+  color: #959595;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.new ul.new__section li h5 {
+  font-size: 14px;
+  color: #59b586;
+  font-family: "Roboto", "sans-serif";
+  font-weight: 700;
+}
+.new ul.new__section li p {
+  color: #959595;
+  font-family: "Arial";
+  font-size: 12px;
+}
+.new ul.new__section li a {
+  font-family: "Roboto", "sans-serif";
+  color: #59b586;
+  font-style: italic;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .slide .caption h1 {
+    font-size: 30px;
+  }
+  .slide .caption h2 {
+    font-size: 35px;
+  }
+  .slide .caption p {
+    font-size: 20px;
+  }
+
+  .product__item .left {
+    display: none;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .slide .caption {
+    display: none;
+  }
+
+  .product__item .left {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=product.css.map */
