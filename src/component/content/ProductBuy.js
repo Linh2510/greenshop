@@ -15,11 +15,11 @@ function ProductBuy(props) {
             <div className="product-content_side">
                 <h3 className="title"><a href="#">Cây ngọc lan</a></h3>
                  <ul className="rating">
-                   <li className="fa fa-star checked" />
-                   <li className="fa fa-star checked" />
-                   <li className="fa fa-star checked" />
-                   <li className="fa fa-star checked" />
-                   <li className="fa fa-star" />
+                   <li className="fa fa-star checked star" />
+                   <li className="fa fa-star checked star" />
+                   <li className="fa fa-star checked star" />
+                   <li className="fa fa-star checked star" />
+                   <li className="fa fa-star-half-o checked star" />
                  </ul>
                  <div className="price"> 250.000đ
                  </div>

@@ -5,6 +5,7 @@ import Banner from '../content/Banner'
 import ProductBuy from '../content/ProductBuy'
 import ProductSlide from '../content/ProductSlide';
 import ProductSlideNew from '../content/ProductSlideNew';
+import Slide from '../content/Slide'
 import New from '../content/New'
 home.propTypes = {
     
@@ -13,22 +14,18 @@ home.propTypes = {
 function home(props) {
     return (
         <React.Fragment>
-            
-                <Banner />
-            
-        <div className="product__feature my-5">
+            <Banner />
+        <div className="product__feature">
             <div className="container">
                 <h5 className="title">
                     <a>Sản phẩm nổi bật</a>
                 </h5>
-                <div className="row mt-5">
+                <div className="row">
                     <div className="col-sm-12 col-md-6 col-lg-6">
                         <div className="row">
-                            <div className="col-12">
                                 <Product />
-                            </div>   
                         </div>
-                        <div className="row pt-3">
+                        <div className="row t-3">
                                 <div className="col-sm-6 col-md-6 col-lg-6">
                                     <Product />
                                 </div>
@@ -46,7 +43,7 @@ function home(props) {
                                 <Product />
                             </div>
                         </div>
-                        <div className="row pt-3">
+                        <div className="row t-3">
                             <div className="col-12">
                                 <Product />
                             </div>
@@ -77,12 +74,16 @@ function home(props) {
                         <h5 className="title">
                             <a>Sản phẩm khuyến mãi</a>
                         </h5>
-                        <ProductSlide />
+                        <div className="row-fix">
+                        <Slide />
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div className="banner my-5">
+        <div className="banner t-3">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -97,7 +98,9 @@ function home(props) {
                     <h5 className="title">
                             <a>Sản phẩm mới</a>
                     </h5>
-                   <ProductSlideNew />
+                  <div className="row-fix">
+                  <ProductSlideNew />
+                      </div> 
             </div>
         </div>
         <div className="new">

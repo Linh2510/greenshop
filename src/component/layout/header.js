@@ -1,11 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Menu from '../content/Menu'
-header.propTypes = {
-    
+import {Link} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
+Header.propTypes = {
+    dem: PropTypes.number,
+};
+Header.defaultProps = {
+    dem: 0,
 };
 
-function header(props) {
+function Header(props) {
+   
+    const sl = useSelector(state => state.product.dem) ;
+    let s1 = localStorage.getItem("dem") ? JSON.parse(localStorage.getItem("dem")) : 0;
     return (
         <section className="header">
             <div className="header__top">
@@ -24,11 +33,8 @@ function header(props) {
                         </div>
                         <div className="col-6 text-right">
                             <ul className="user"> 
-                            <li><a><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng nhập</a></li>
-                                <li>
-                                    <a><i class="fa fa-user" aria-hidden="true"></i> Đăng ký</a>
-                                </li>
-                                
+                                <li><Link to='/login'><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng nhập</Link></li>
+                                <li><Link to='/register'><i class="fa fa-user" aria-hidden="true"></i> Đăng ký</Link> </li>
                             </ul>
                        </div>
                     </div>
@@ -56,7 +62,7 @@ function header(props) {
                                
                         </div>
                          <div className="col-2 cart">
-                                <span><i class="fa fa-shopping-basket" aria-hidden="true"></i> 0 sản phẩm</span>
+                                <span><Link to='/cart'><i class="fa fa-shopping-basket" aria-hidden="true"></i> {s1} sản phẩm </Link></span>
                          </div>
                  </div>
              </div>
@@ -72,13 +78,13 @@ function header(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                        <a className="nav-link" href="#">TRANG CHỦ <span className="sr-only">(current)</span></a>
+                        <Link to='/' className="nav-link">TRANG CHỦ <span className="sr-only">(current)</span></Link>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">GIỚI THIỆU </a>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">SẢN PHẨM</a>
+                        <Link to='/listproduct' className="nav-link" href="#">SẢN PHẨM</Link>
                         </li>
                         <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,10 +96,10 @@ function header(props) {
                         </div>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">TIN TỨC</a>
+                        <Link to='/blog' className="nav-link">TIN TỨC</Link>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">LIÊN HỆ</a>
+                        <Link to='/contact' className="nav-link" >LIÊN HỆ</Link>
                         </li>
                         
                     </ul>
@@ -112,4 +118,4 @@ function header(props) {
     );
 }
 
-export default header;
+export default Header;

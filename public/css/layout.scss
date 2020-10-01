@@ -13,6 +13,7 @@ $f-500:500;
 $f-600:600;
 $f-700:700;
 $f-800:800;
+
 @font-face {
     font-family: "Arial";
     src:url('../font/arial/ArialCE.ttf')
@@ -25,13 +26,15 @@ $f-800:800;
     padding:0;
     margin: 0;
 }
+
+
 ul,p{
     margin-bottom: 0;
 }
 .form-control:focus,.btn:focus {
     color: none!important;
     background-color: none!important;
-    border-color: #fff!important;
+    // border-color: #fff!important;
     outline: 0;
     box-shadow:none!important;
 }
@@ -72,6 +75,9 @@ a{
                 border-left: 1px solid $color-border-head ;
                 &:last-child {
                     border-right: 1px solid $color-border-head ;
+                }
+                a{
+                    color: $color-header;
                 }
             }
         }
@@ -119,11 +125,12 @@ a{
         .cart {
             margin: auto;
             text-align: right;
-            span{
+            a{
                 color: $color-cart;
                 font-family: $color-cart;
                 font-size: 15px;
                 cursor: pointer;
+                text-decoration: none;
             }
         }
     }
@@ -182,13 +189,19 @@ a{
 
 .footer{
     background-color: $color-bg-top;
-    color:$color-header;
+    
     // font-family: "Arial";
     // font-size: 13px;
     &__top{
-        padding: 20px 0;
+        padding: 35px 0 30px 0;
         border-bottom: 1px solid $color-header;
-        
+        font-family: "Arial";
+        font-weight: bold;
+        color: $color-header;
+        p{
+            font-size: 14px;
+            
+        }
         ul.connect {
             li{
                 list-style: none;
@@ -215,11 +228,17 @@ a{
     &__mid{
         padding:20px 0;
         border-bottom: 1px solid $color-header;
-        
+        font-size: 12px;
+        color: #b7b7b7;
+       
         ul{
             li{
                 list-style: none;
                 padding: 5px 0;
+                &:hover{
+                    color: #36a66d;
+                    cursor: pointer;
+                }
             }
         }
         ul.left {
@@ -243,12 +262,19 @@ a{
                 list-style: none;
                 display: inline-block;
                 padding-right: 20px;
+                font-size: 12px;
+                font-family: "Arial";
+                color: #b7b7b7;
+               
             }
+
         }
     }
     .design {
         background-color: $colo-desgin;
         color:#fff;
+        font-size: 14px;
+        font-family: "Arial";
         padding:10px 0;
     }
 }

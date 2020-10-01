@@ -19,9 +19,10 @@ export default class Responsive extends Component {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       initialSlide: 0,
+      swipeToSlide: true,
       responsive: [
         {
           breakpoint: 1024,
@@ -57,8 +58,8 @@ export default class Responsive extends Component {
                 <Product />
               </div>
               <div className="col-fix t-3">
-                <Product />
-              </div>
+                    <Product />
+            </div>
           </div>
           <div>
           <div className="col-fix">
@@ -69,7 +70,7 @@ export default class Responsive extends Component {
             </div>
           </div>
           <div>
-            <div className="col-fix ">
+            <div className="col-fix">
                 <Product />
               </div>
               <div className="col-fix t-3">

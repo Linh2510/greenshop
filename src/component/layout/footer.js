@@ -46,7 +46,7 @@ function footer(props) {
                                 <li><a><img src="../images/logo.png"/></a></li>
                                 <li><p>Green Shop được thành lập từ 08/2010 được sự tin tưởng của khách hàng trong suốt thời gian hoạt động đến nay ngày càng phát triển</p></li>
                                 <li><a><i class="fa fa-mobile" aria-hidden="true"></i> Điện thoại: (84-4) 66.558.868</a></li>
-                                <li><a><i class="fa fa-envelope" aria-hidden="true"></i> Email: info@dkt.com.vn</a></li>
+                                <li><a><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: info@dkt.com.vn</a></li>
                             </ul>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-8">
