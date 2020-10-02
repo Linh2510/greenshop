@@ -147,9 +147,11 @@ a {
 }
 .header__bottom ul.icon-respon li {
   list-style: none;
-  color: #ffffff;
   display: inline-block;
   padding: 0 10px;
+}
+.header__bottom ul.icon-respon li a {
+  color: #ffffff;
 }
 
 .footer {

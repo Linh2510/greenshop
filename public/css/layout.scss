@@ -178,10 +178,14 @@ a{
         ul.icon-respon{
             display: none;
             li {
+                
                 list-style: none;
+                a{
                 color: $color-border-inp;
+                }
                 display: inline-block;
                 padding: 0 10px;
+               
             }
         }
     }

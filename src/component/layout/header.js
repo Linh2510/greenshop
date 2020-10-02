@@ -20,7 +20,7 @@ function Header(props) {
             <div className="header__top">
                 <div className="container">
                     <div className="row">
-                        <div className="col-6 info">
+                        <div className="col-sm-12 col-md-6 col-lg-6 info">
                             <span ><i class="fa fa-clock-o" aria-hidden="true"></i> Open time: 8.00 - 18.00</span>
                             <span > Monday - Sunday </span>
                             <ul class="social">
@@ -31,7 +31,7 @@ function Header(props) {
 
                             </ul>
                         </div>
-                        <div className="col-6 text-right">
+                        <div className="col-sm-12 col-md-6 col-lg-6 text-right">
                             <ul className="user"> 
                                 <li><Link to='/login'><i class="fa fa-user-plus" aria-hidden="true"></i> Đăng nhập</Link></li>
                                 <li><Link to='/register'><i class="fa fa-user" aria-hidden="true"></i> Đăng ký</Link> </li>
@@ -105,10 +105,10 @@ function Header(props) {
                     </ul>
                     </div>
                     <ul class="icon-respon">
-                        {/* <li><i class="fa fa-user" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-user-plus" aria-hidden="true"></i></li> */}
-                        <li><i class="fa fa-search" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-shopping-basket" aria-hidden="true"></i></li>
+                        <li><Link to='/login'><i class="fa fa-user" aria-hidden="true"></i></Link></li>
+                        <li><Link to='/register'><i class="fa fa-user-plus" aria-hidden="true"></i></Link></li>
+                        <li><Link to =''><i class="fa fa-search" aria-hidden="true"></i></Link></li>
+                        <li><Link to='/cart'><i class="fa fa-shopping-basket" aria-hidden="true"></i></Link></li>
                     </ul>
                 </nav>
             </div>
